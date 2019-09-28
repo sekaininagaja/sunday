@@ -5,6 +5,7 @@
 
     $(document).ready(function(){
         url = window.location.href;
+        url = url.substr(0, url.length -1);
         // Connect to our node/websockets server
         var socket = io.connect(url + ':3000');
 
