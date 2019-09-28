@@ -5,9 +5,9 @@ var mysql = require('mysql')
 const io = require('socket.io')(http);
 var set = require('./setting.json')
 
-console.log(set);
+
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/../index.html'); 
+    res.sendFile(__dirname + '../index.html');
 });
 
 
