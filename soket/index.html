@@ -7,7 +7,7 @@
         url = window.location.href;
         url = url.substr(0, url.length -1);
         // Connect to our node/websockets server
-        var socket = io.connect(url + ':3000');
+        var socket = io.connect(url );
 
         // Initial set of notes, loop through and add to list
         socket.on('initial notes', function(data){
